@@ -1,0 +1,24 @@
+package com.example.demo;
+
+
+
+import java.io.IOException;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+
+@SpringBootApplication
+@ComponentScan(basePackages= {"controller"})
+public class SalaryApplicationBackendApplication {
+
+	public static void main(String[] args) throws IOException {
+		SpringApplication.run(SalaryApplicationBackendApplication.class, args);
+		System.out.println("hello world");
+		
+		String template = null;
+		//to convert jsonstring to JSONObject
+		JSONParser parser= new JSONParser();
+		
+}
+}

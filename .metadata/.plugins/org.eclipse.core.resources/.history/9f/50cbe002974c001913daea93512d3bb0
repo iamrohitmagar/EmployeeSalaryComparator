@@ -1,0 +1,105 @@
+package com.example.demo;
+
+
+
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+
+@SpringBootApplication
+@ComponentScan(basePackages= {"controller"})
+public class SalaryApplicationBackendApplication {
+
+	public static void main(String[] args) throws IOException {
+		SpringApplication.run(SalaryApplicationBackendApplication.class, args);
+//		String fileName = "employeedata.json";
+//		ClassLoader classLoader = new SalaryApplicationBackendApplication().getClass().getClassLoader();	
+//		File file = new File(classLoader.getResource(fileName).getFile());
+//		   //File is found
+//        System.out.println("File Found : " + file.exists());
+//        System.out.println(file.getAbsolutePath());
+//         
+//        //Read File Content
+//        String content = new String(Files.readAllBytes(file.toPath()));
+//        System.out.println(content);
+        
+	
+		
+		JSONParser jsonParsor = new JSONParser();
+        
+        
+        try
+        {
+        	
+
+            Object jsonObject = jsonParsor
+                    .parse(new FileReader("D:\\EMIS\\BACKEND\\SalaryApplicationBackend\\src\\main\\resources\\employee.json"));
+            
+//            Solution 1
+            	
+            JSONObject obj = (JSONObject) jsonParsor.parse(jsonObject.toString());
+
+            JSONObject object = obj;
+            
+            JSONArray list = new JSONArray();
+            list.add(object);
+            System.out.println(list);
+ //           
+            
+            //JSONObject TestjsonObject = (JSONObject) jsonObject;
+            //System.out.println(TestjsonObject);
+            
+
+            
+            //JSONArray jarray = new JSONArray();
+            //jarray.add(jsonObject);
+         
+           
+
+   
+//            JSONObject jsonObjecttest = (JSONObject) jsonObject;
+//            JSONArray employeeList = (JSONArray) jsonObject;
+//            System.out.println(employeeList);
+       }
+          /*  System.out.println(jsonObject);
+            ArrayList<String> listdata = new ArrayList<String>();
+            EmployeeDTO empDTO = new EmployeeDTO();
+            List<EmployeeDTO> listOfEmployee = new ArrayList<EmployeeDTO>();
+             JSONArray jsonArray = (JSONArray)jsonObject;
+            if (jsonArray != null) { 
+               for (int i=0;i<jsonArray.size();i++){ 
+                //listdata.add("{\"name\":\""+jsonArray[i]+"\",\"id\":\"121\",\"salary\":\"20000\"}");
+            	   //listOfEmployee.add(jsonArray.get(i).toString().)
+            	  
+            	   empDTO.setId(jsonArray.get(i).toString());
+            	  // System.out.println("ID"+empDTO.getId());
+
+            	   listdata.add(jsonArray.get(i).toString());
+                 
+            	System.out.println("objects: "+jsonArray.get(i).toString());
+               } 
+            } 
+            //ArrayList<String> listdata = new ArrayList<String>();     
+            System.out.println("JSON Arrya"+jsonArray);
+            
+            
+            
+        }
+        catch(FileNotFoundException fe)
+        {
+            fe.printStackTrace();
+   }*/
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+		
+	}
+}

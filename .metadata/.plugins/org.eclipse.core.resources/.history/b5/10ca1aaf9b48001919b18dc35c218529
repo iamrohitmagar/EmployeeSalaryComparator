@@ -1,0 +1,71 @@
+package com.example.demo;
+
+
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.json.JSONArray;
+import org.json.simple.parser.JSONParser;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+
+@SpringBootApplication
+@ComponentScan(basePackages= {"controller"})
+public class SalaryApplicationBackendApplication {
+
+	public static void main(String[] args) throws IOException {
+		SpringApplication.run(SalaryApplicationBackendApplication.class, args);
+//		String fileName = "employeedata.json";
+//		ClassLoader classLoader = new SalaryApplicationBackendApplication().getClass().getClassLoader();	
+//		File file = new File(classLoader.getResource(fileName).getFile());
+//		   //File is found
+//        System.out.println("File Found : " + file.exists());
+//        System.out.println(file.getAbsolutePath());
+//         
+//        //Read File Content
+//        String content = new String(Files.readAllBytes(file.toPath()));
+//        System.out.println(content);
+        
+	
+		
+		JSONParser jsonParsor = new JSONParser();
+        
+        
+        try
+        {
+        	
+
+            Object jsonObject = jsonParsor
+                    .parse(new FileReader("D:\\EMIS\\BACKEND\\SalaryApplicationBackend\\src\\main\\resources\\employee.json"));
+            
+            ArrayList<String> listdata = new ArrayList<String>();     
+            JSONArray jArray = (JSONArray)jsonObject; 
+            if (jArray != null) { 
+               for (int i=0;i<jArray.length();i++){ 
+                listdata.add(jArray.getString(i));
+               } 
+            } 
+          //  ArrayList<String> listdata = new ArrayList<String>();     
+            
+          
+            
+        }
+        catch(FileNotFoundException fe)
+        {
+            fe.printStackTrace();
+   }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+
+ƒsquid:UselessImportCheck"=Remove this unused import 'com.example.demo.dto.EmployeeDTO'.(°°²ôÿÿÿÿÿ8ÎÉÏ›-HÌ RMINORZ
+CODE_SMELL
+º%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8ÒšÙ®š-HË RMINORZ
+CODE_SMELL
+squid:UselessImportCheck">Remove this unused import 'org.json.simple.parser.JSONParser'.(õø²¹8ÎÉÏ›-HÊ RMINORZ
+CODE_SMELL
+|squid:UselessImportCheck
+"6Remove this unused import 'org.json.simple.JSONArray'.(àĞ›¢şÿÿÿÿ8ÎÉÏ›-HÎ RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÎÉÏ›-HÇ RMINORZ
+CODE_SMELL
+usquid:UselessImportCheck"/Remove this unused import 'java.io.FileReader'.(Â¡¢äşÿÿÿÿ8ÎÉÏ›-HÉ RMINORZ
+CODE_SMELL
+}squid:UselessImportCheck"7Remove this unused import 'org.json.simple.JSONObject'.(‚ƒç‘ÿÿÿÿÿ8ÎÉÏ›-HÍ RMINORZ
+CODE_SMELL
+ƒsquid:UselessImportCheck"BRemove this unused import 'org.json.simple.parser.ParseException'.(ƒÁ‡8ÎÉÏ›-HÈ RMINORZ
+CODE_SMELL
+qsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÎÉÏ›-HÆ RMINORZ
+CODE_SMELL
+—squid:UselessImportCheck"QRemove this unused import 'org.springframework.context.annotation.ComponentScan'.(æëòÒûÿÿÿÿ8¾¶ €œ-HØ RMINORZ
+CODE_SMELL

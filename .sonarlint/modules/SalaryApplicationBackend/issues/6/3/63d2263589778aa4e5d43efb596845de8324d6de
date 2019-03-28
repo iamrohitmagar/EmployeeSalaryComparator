@@ -1,0 +1,12 @@
+
+˜squid:UselessImportCheck"RRemove this unused import 'org.springframework.web.bind.annotation.DeleteMapping'.(­ìÎªþÿÿÿÿ8õÉÿ›-HÁ RMINORZ
+CODE_SMELL
+q
+squid:S106*"9Replace this use of System.out or System.err by a logger.(¨¶ÑÍþÿÿÿÿ8ÜÙû¯š-H¤ RMAJORZ
+CODE_SMELL
+Ø%squid:RedundantThrowsDeclarationCheck>"‰Remove the declaration of thrown exception 'org.springframework.data.rest.webmvc.ResourceNotFoundException' which is a runtime exception.(­Æ‰ß8œÜÝî›-H  RMINORZ
+CODE_SMELL
+psquid:UselessImportCheck"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8û¿Íÿ›-HÄ RMINORZ
+CODE_SMELL
+†squid:S00117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­Æ‰ß8œÜÝî›-H¢ RMINORZ
+CODE_SMELL

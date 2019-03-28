@@ -1,0 +1,80 @@
+/*************************************************************************
+ * CONFIDENTIAL
+ * __________________
+ * 
+ *  [2018] Volkswagen IT Services, India
+ *  All Rights Reserved.
+ * 
+ * NOTICE:  All information contained herein is, and remains the property 
+ * of Volkswagen IT Services India. The intellectual and technical concepts 
+ * contained herein are proprietary to VWITS and are protected by trade secret.
+ * 
+ * Dissemination of this information or reproduction of this material is 
+ * strictly forbidden unless prior written permission is obtained from 
+ * Volkswagen IT Services, India.
+ */
+
+package com.example.demo.configurations;
+
+import java.util.Arrays;
+
+import javax.sql.DataSource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+
+
+/**
+ * The class is written for Welcome Mail Application.
+ *
+ * @author VWITS
+ * @version 1.0
+ * @since 2018-09-15
+ */
+@Configuration
+@EnableWebMvc
+@EnableWebSecurity
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
+		
+	@Autowired
+	Environment environment;
+		
+	@Value("${spring.queries.users-query}")
+	private String usersQuery;
+
+	@Value("${spring.queries.permissions-query}")
+	private String permissionsQuery;
+	
+
+ 
+//	@Override
+//	protected void configure(HttpSecurity http) throws Exception {
+//		http.cors().and().csrf().disable();
+//		http.authorizeRequests().antMatchers("**/").permitAll();
+//		http.exceptionHandling().accessDeniedPage("/error");
+//	}
+	
+//    @Bean
+//    CorsConfigurationSource corsConfigurationSource() {
+//      final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+//      CorsConfiguration configuration =  new CorsConfiguration();
+//      configuration.setExposedHeaders(Arrays.asList("Content-type","Authorization"));
+//      source.registerCorsConfiguration("/**", configuration.applyPermitDefaultValues());
+//      return source;
+//    }
+}

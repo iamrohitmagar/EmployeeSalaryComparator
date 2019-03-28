@@ -1,0 +1,38 @@
+package com.example.demo;
+
+
+
+import java.io.IOException;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+
+@SpringBootApplication
+@ComponentScan(basePackages= {"controller"})
+public class SalaryApplicationBackendApplication {
+
+	public static void main(String[] args) throws IOException {
+		SpringApplication.run(SalaryApplicationBackendApplication.class, args);
+		
+          JSONObject json = null;
+		try {
+			json = new JSONObject("new FileReader(\"D:\\\\EMIS\\\\BACKEND\\\\SalaryApplicationBackend\\\\src\\\\main\\\\resources\\\\employee.json\")");
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+            	
+           try {
+			String s =  (String) json.get("name");
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+            
+           
+}
+}

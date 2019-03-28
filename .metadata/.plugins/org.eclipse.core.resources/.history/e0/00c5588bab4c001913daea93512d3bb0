@@ -1,0 +1,39 @@
+package com.example.demo;
+
+
+
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+
+@SpringBootApplication
+@ComponentScan(basePackages= {"controller"})
+public class SalaryApplicationBackendApplication {
+
+	public static void main(String[] args) throws IOException {
+		SpringApplication.run(SalaryApplicationBackendApplication.class, args);
+		System.out.println("hello world");
+		
+		String template = null;
+		//to convert jsonstring to JSONObject
+		JSONParser parser= new JSONParser();
+        String filePath="D:\\EMIS\\BACKEND\\SalaryApplicationBackend\\src\\main\\resources"; 		
+		
+		try {
+			FileReader reader = new FileReader(filePath);
+			Object obj1=parser.parse(reader);
+			JSONObject jsonObj = (JSONObject)obj1;
+			template = (String) jsonObj.get("name");
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+}
+}

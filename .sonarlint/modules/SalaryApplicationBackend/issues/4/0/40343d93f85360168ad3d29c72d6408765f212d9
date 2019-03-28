@@ -1,0 +1,52 @@
+
+jsquid:S1135M"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ò¸Ù›-Hİ RINFOZ
+CODE_SMELL
+_squid:S1148,"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ø†‰Ï›-Hä RMINORZVULNERABILITY
+jsquid:S1135p"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8×Õ›-Hã RINFOZ
+CODE_SMELL
+_squid:S1148t"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8×Õ›-Hî RMINORZVULNERABILITY
+_squid:S11480"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ò¸Ù›-Hğ RMINORZVULNERABILITY
+zsquid:S10759"ARefactor your code to get this URI from a customizable parameter.(¯Úóöÿÿÿÿÿ8ø†‰Ï›-Hú RMINORZ
+CODE_SMELL
+_squid:S1481"-Remove this unused "filePath" local variable.(¯ÚóöÿÿÿÿÿHŞ RMINORZ
+CODE_SMELL
+|squid:S2095h"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(–éÆ‹ûÿÿÿÿ8¦„åÙ›-Hå RBLOCKERZBUG
+_squid:S1148q"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ò¸Ù›-Hû RMINORZVULNERABILITY
+usquid:S1854"<Remove this useless assignment to local variable "filePath".(¯Úóöÿÿÿÿÿ8ò¸Ù›-Hà RMAJORZ
+CODE_SMELL
+rsquid:S2147o"ECombine this catch with the one at line 108, which has the same body.(ï­£ÄHê RMINORZ
+CODE_SMELL
+Xsquid:S1148K"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿHõ RMINORZVULNERABILITY
+Xsquid:S1148N"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿHá RMINORZVULNERABILITY
+wsquid:S2147r"ECombine this catch with the one at line 108, which has the same body.(âÃƒŠıÿÿÿÿHæ RMINORZ
+CODE_SMELL
+}squid:S2147/"DCombine this catch with the one at line 43, which has the same body.(âÃƒŠıÿÿÿÿ8ò¸Ù›-Hè RMINORZ
+CODE_SMELL
+jsquid:S1135J"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ò¸Ù›-Hì RINFOZ
+CODE_SMELL
+ssquid:S1075"ARefactor your code to get this URI from a customizable parameter.(¯ÚóöÿÿÿÿÿHò RMINORZ
+CODE_SMELL
+`squid:S1481]",Remove this unused "counter" local variable.(ŒÂëó8ğ¬”ñ›-Hı RMINORZ
+CODE_SMELL
+_squid:S1148n"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8×Õ›-Hñ RMINORZVULNERABILITY
+jsquid:S1135m"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ø†‰Ï›-Hé RINFOZ
+CODE_SMELL
+xsquid:S2147-"DCombine this catch with the one at line 43, which has the same body.(ï­£Ä8ò¸Ù›-Hâ RMINORZ
+CODE_SMELL
+†squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(…õÎˆHç RMINORZ
+CODE_SMELL
+xsquid:S2147I"DCombine this catch with the one at line 70, which has the same body.(ŸäÁ‚8×Õ›-Hü RMINORZ
+CODE_SMELL
+_squid:S1148."#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ò¸Ù›-Hù RMINORZVULNERABILITY
+|squid:S2095C"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(–éÆ‹ûÿÿÿÿ8¿åõ×›-HÚ RBLOCKERZBUG
+jsquid:S1135s"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ò¸Ù›-Hö RINFOZ
+CODE_SMELL
+zsquid:S1075Z"ARefactor your code to get this URI from a customizable parameter.(¯Úóöÿÿÿÿÿ8ò¸Ù›-Hí RMINORZ
+CODE_SMELL
+jsquid:S1135G"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8×Õ›-Hô RINFOZ
+CODE_SMELL
+Xsquid:S1148H"#Use a logger to log this exception.(ÂşÿâûÿÿÿÿHß RMINORZVULNERABILITY
+Îsquid:S1192"‘Define a constant instead of duplicating this literal "D:\\EMIS\\BACKEND\\SalaryApplicationBackend\\src\\main\\resources\\employee.json" 6 times.(¯Úóöÿÿÿÿÿ8ø†‰Ï›-Hë RCRITICALZ
+CODE_SMELL
+xsquid:S2147L"DCombine this catch with the one at line 70, which has the same body.(ÿÚŞ®8×Õ›-Hø RMINORZ
+CODE_SMELL

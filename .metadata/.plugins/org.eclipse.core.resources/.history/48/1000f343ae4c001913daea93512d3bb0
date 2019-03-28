@@ -1,0 +1,65 @@
+package com.example.demo;
+
+
+
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
+
+import DTO.EmployeeDTO;
+
+
+@SpringBootApplication
+@ComponentScan(basePackages= {"controller"})
+public class SalaryApplicationBackendApplication {
+
+	public static void main(String[] args) throws IOException {
+		SpringApplication.run(SalaryApplicationBackendApplication.class, args);
+		System.out.println("hello world");
+		
+		String template = null;
+		//to convert jsonstring to JSONObject
+		JSONParser parser= new JSONParser();
+        String filePath="D:\\EMIS\\BACKEND\\SalaryApplicationBackend\\src\\main\\resources\\employee.json"; 		
+		
+		try {
+//		
+			
+			EmployeeDTO emp = new EmployeeDTO();
+			List<EmployeeDTO> empDTO = new ArrayList<EmployeeDTO>();
+			 JSONArray a = (JSONArray) parser.parse(new FileReader("D:\\EMIS\\BACKEND\\SalaryApplicationBackend\\src\\main\\resources\\employee.json"));
+
+			  for (Object o : a)
+			  {
+			    JSONObject person = (JSONObject) o;
+
+			    String name = (String) person.get("name");
+			    String id = (String) person.get("id");
+			    String salary = (String) person.get("salary");
+			    System.out.println(name);
+                emp.setId(id);
+                emp.setName(name);
+                emp.setSalary(salary);
+
+//			    JSONArray cars = (JSONArray) person.get("cars");
+//
+//			    for (Object c : cars)
+//			    {
+//			      System.out.println(c+"");
+//			    }
+			  }
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+}
+}
